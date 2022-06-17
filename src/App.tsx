@@ -1,23 +1,12 @@
-import React from 'react';
-import './App.css';
+import React, {Fragment} from 'react';
+import Dashboard from "./pages/Dashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Fragment>
+          <Dashboard/>
+      </Fragment>
   );
-}
+};
 
 export default App;
