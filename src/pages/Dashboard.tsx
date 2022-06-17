@@ -1,4 +1,5 @@
 import React, {FC, useEffect, useState} from 'react';
+import CardList from '../components/CardList';
 import {ICard} from "../types/types";
 import "../styles/dashboard.css"
 
@@ -23,6 +24,7 @@ const Dashboard: FC = () => {
     return (
         <div className='dashboard'>
             <h1 className='dashboard-title'>Articles Dashboard</h1>
+            <CardList cards={cardsData}/>
         </div>
     );
 };

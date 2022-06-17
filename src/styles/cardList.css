@@ -1,0 +1,7 @@
+.cardList {
+    display: grid;
+    grid-template-columns: 372px 372px;
+    grid-column-gap: 34px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
