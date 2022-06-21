@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({card}) => {
     return (
-        <div className="card">
+        <div className="card" data-testid="card-testid">
             <div className="card-panorama">
                 <img className="img" src={laptopPNG} alt=""/>
             </div>
