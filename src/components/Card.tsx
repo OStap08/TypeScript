@@ -23,7 +23,7 @@ const Card: FC<CardProps> = ({card}) => {
                 <div className="card-description">{card.description}</div>
                 <div className="author">
                     <img className="author-img" src={card.author.profileImg} alt=""/>
-                    <span>{card.author.name}</span>
+                    <span>{card.author?.name}</span>
                 </div>
             </div>
         </div>

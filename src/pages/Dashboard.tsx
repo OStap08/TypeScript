@@ -4,7 +4,7 @@ import {ICard} from "../types/types";
 import "../styles/dashboard.css"
 
 const Dashboard: FC = () => {
-    const [cardsData, setCardsData] = useState<ICard[]>([])
+    const [cardsData, setCardsData] = useState<ICard[] | []>([])
 
     useEffect(() => {
         //all categories of cards
@@ -14,10 +14,10 @@ const Dashboard: FC = () => {
     async function fetchCardsData(path: string) {
         try {
             const response = await fetch(`https://mocki.io/v1/${path}`)
-            const data = await response.json()
-            setCardsData(data);
+            const cardsArr = await response.json();
+            setCardsData(cardsArr);
         } catch (e) {
-            alert(e)
+            throw(e)
         }
     }
 

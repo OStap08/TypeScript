@@ -1,5 +1,5 @@
 export interface ICard {
-    id: number;
+    readonly id: number;
     title: string;
     description: string;
     author: IAuthor;
