@@ -1,0 +1,10 @@
+.dashboard{
+    background-color: #E5E5E5;
+    height: 100vh;
+    padding: 30px 35px;
+}
+
+.dashboard-title{
+    font-size: 21px;
+    font-weight: 700;
+}
