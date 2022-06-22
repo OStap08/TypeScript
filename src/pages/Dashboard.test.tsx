@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen} from '@testing-library/react';
 import Dashboard from './Dashboard';
 import {ICard} from "../types/types";
@@ -38,7 +37,7 @@ describe('get cards data', () => {
             }),
         ) as jest.Mock;
     })
-    test('renders learn react link', async () => {
+    test('fetching data from API', async () => {
         render(<Dashboard/>);
         const cards = await screen.findAllByTestId('card-testid');
         expect(cards.length).toBe(2)

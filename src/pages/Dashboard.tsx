@@ -22,7 +22,7 @@ const Dashboard: FC = () => {
     }
 
     return (
-        <div className='dashboard'>
+        <div className='dashboard' data-testid='dashboard'>
             <h1 className='dashboard-title'>Articles Dashboard</h1>
             <CardList cards={cardsData}/>
         </div>
